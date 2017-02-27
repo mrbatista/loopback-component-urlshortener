@@ -1,0 +1,64 @@
+{
+  "name": "loopback-component-urlshortener",
+  "version": "0.1.0",
+  "description": "Loopback Url Shortener Component",
+  "homepage": "https://github.com/mrbatista/loopback-component-urlshortener",
+  "author": {
+    "name": "Matteo Padovano",
+    "email": "mrba7ista@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "keywords": [
+    "loopback",
+    "component",
+    "urlshortener"
+  ],
+  "devDependencies": {
+    "babel-core": "^5.5.0",
+    "babel-eslint": "^4.1.8",
+    "babel-polyfill": "^6.23.0",
+    "chai": "^3.5.0",
+    "del": "^2.0.2",
+    "dirty-chai": "^1.2.2",
+    "eslint": "^2.1.0",
+    "eslint-config-xo-space": "^0.13.0",
+    "eslint-plugin-babel": "^3.1.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-plumber": "^1.0.0",
+    "isparta": "^3.0.3",
+    "loopback": "^3.4.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrbatista/loopback-component-urlshortener.git"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "googleapis": "^17.1.0"
+  }
+}
