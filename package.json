@@ -18,26 +18,26 @@
     "urlshortener"
   ],
   "devDependencies": {
-    "babel-core": "^5.5.0",
-    "babel-eslint": "^4.1.8",
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^5.0.0",
     "babel-polyfill": "^6.23.0",
     "chai": "^3.5.0",
     "del": "^2.0.2",
     "dirty-chai": "^1.2.2",
-    "eslint": "^2.1.0",
+    "eslint": "^4.18.2",
     "eslint-config-xo-space": "^0.13.0",
     "eslint-plugin-babel": "^3.1.0",
-    "gulp": "^3.9.0",
-    "gulp-babel": "^5.1.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^6.0.0",
     "gulp-coveralls": "^0.1.0",
-    "gulp-eslint": "^2.0.0",
+    "gulp-eslint": "^4.0.0",
     "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-istanbul": "^0.10.3",
+    "gulp-istanbul": "^1.1.2",
     "gulp-line-ending-corrector": "^1.0.1",
-    "gulp-mocha": "^2.0.0",
-    "gulp-nsp": "^2.1.0",
+    "gulp-mocha": "^5.0.0",
+    "gulp-nsp": "^3.0.0",
     "gulp-plumber": "^1.0.0",
-    "isparta": "^3.0.3",
+    "isparta": "^4.0.0",
     "loopback": "^3.4.0"
   },
   "eslintConfig": {
@@ -54,11 +54,14 @@
     "node": ">=4.0.0"
   },
   "scripts": {
-    "prepublish": "gulp prepublish",
-    "test": "gulp"
+    "prepublish": "npm run snyk-protect; gulp prepublish",
+    "test": "gulp",
+    "snyk-protect": "snyk protect"
   },
   "license": "MIT",
   "dependencies": {
-    "googleapis": "^17.1.0"
-  }
+    "googleapis": "^17.1.0",
+    "snyk": "^1.80.0"
+  },
+  "snyk": true
 }
